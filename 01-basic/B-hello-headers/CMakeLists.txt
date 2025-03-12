@@ -4,9 +4,10 @@
 cmake_minimum_required(VERSION 3.5)
 
 # Set the project name
-project (hello_headers)
+project(hello_headers)
 
 # Create a sources variable with a link to all cpp files to compile
+# 这里是设置一个变量的意思
 set(SOURCES
     src/Hello.cpp
     src/main.cpp
@@ -17,6 +18,7 @@ add_executable(hello_headers ${SOURCES})
 
 # Set the directories that should be included in the build command for this target
 # when running g++ these will be included as -I/directory/path/
+# ${PROJECT_SOURCE_DIR} 当前项目的根目录
 target_include_directories(hello_headers
     PRIVATE 
         ${PROJECT_SOURCE_DIR}/include

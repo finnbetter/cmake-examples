@@ -16,6 +16,17 @@ target_include_directories(hello_library
         ${PROJECT_SOURCE_DIR}/include
 )
 
+# 在 build 目录下，就可以看到我们编译出来的一个 .a 文件：
+# qixian@qixiandeMBP ~/m/c/0/C/build (learn)> tree -L 1
+# .
+# ├── CMakeCache.txt
+# ├── CMakeFiles
+# ├── Makefile
+# ├── cmake_install.cmake
+# ├── hello_binary
+# └── libhello_library.a
+
+# 整体上还是很好理解的
 
 ############################################################
 # Create an executable
